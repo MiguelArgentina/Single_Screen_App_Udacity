@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagenFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondodepantallaudacity" />
+
+    <ImageView
+        android:id="@+id/imgAutomatismo"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAutomatismo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAutomatismo"
+        app:layout_constraintTop_toTopOf="@+id/txtAutomatismo"
+        app:srcCompat="@drawable/automatismo" />
+
+    <TextView
+        android:id="@+id/txtAutomatismo"
+        style="@style/stlTextos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/txtAutomatismo"
+        app:layout_constraintStart_toStartOf="@+id/txtHerramientas"
+        app:layout_constraintTop_toBottomOf="@+id/txtHerramientas"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtHerramientas"
+        style="@style/stlTextos"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtHerramientas"
+        app:layout_constraintStart_toStartOf="@+id/txtCompost"
+        app:layout_constraintTop_toBottomOf="@+id/txtCompost"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgHerramientas"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHerramientas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHerramientas"
+        app:layout_constraintTop_toTopOf="@+id/txtHerramientas"
+        app:srcCompat="@drawable/herramientas" />
+
+    <ImageView
+        android:id="@+id/imgCompost"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCompost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCompost"
+        app:layout_constraintTop_toTopOf="@+id/txtCompost"
+        app:srcCompat="@drawable/compost" />
+
+    <ImageView
+        android:id="@+id/imgMacetas"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMacetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMacetas"
+        app:layout_constraintTop_toTopOf="@+id/txtMacetas"
+        app:srcCompat="@drawable/maceta" />
+
+    <TextView
+        android:id="@+id/tituloPrincipal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/tituloPrincipal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/fanwood_text"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/numeroCelular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenFondo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlantas"
+        style="@style/stlTextos"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/txtPlantas"
+        app:layout_constraintStart_toStartOf="@+id/imagenFondo"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPrincipal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMacetas"
+        style="@style/stlTextos"
+
+        android:layout_marginTop="40dp"
+        android:text="@string/txtMacetas"
+        app:layout_constraintStart_toStartOf="@+id/txtPlantas"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlantas"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtCompost"
+        style="@style/stlTextos"
+
+        android:layout_marginTop="40dp"
+        android:text="@string/txtCompost"
+        app:layout_constraintStart_toStartOf="@+id/txtMacetas"
+        app:layout_constraintTop_toBottomOf="@+id/txtMacetas"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgPlantas"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPlantas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPlantas"
+        app:layout_constraintTop_toTopOf="@+id/imagenFondo"
+        app:srcCompat="@drawable/planta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDescripcionNegocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/fanwood_text"
+        android:text="@string/txtDescripcionNegocio"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenFondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutomatismo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

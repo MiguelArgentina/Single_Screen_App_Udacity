@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Single Screen App</string>
+    <string name="tituloPrincipal">Invernadero Casero</string>
+    <string name="numeroCelular">+54-381-5879150</string>
+    <string name="txtPlantas">Plantas</string>
+    <string name="txtMacetas">Macetas</string>
+    <string name="txtCompost">Compost</string>
+    <string name="txtHerramientas">Herramientas</string>
+    <string name="txtDescripcionNegocio">Llamenos y obtenga asesoramiento para poder armar su propio invernadero autonomo. Lo ayudamos con todo lo necesario para que lo arme Ud. mismo!</string>
+    <string name="txtAutomatismo">Automatismos</string>
+</resources>
